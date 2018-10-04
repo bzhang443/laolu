@@ -5,6 +5,7 @@ AllCops:
   Include:
     - '**/Gemfile'
     - '**/Rakefile'
+    - 'app/**/*'
   Exclude:
    - 'bin/*'
    - 'db/seeds.rb'
