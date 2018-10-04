@@ -1,2 +1,0 @@
-vagrant ssh = ssh -p 2222 vagrant@127.0.0.1
-tail -f ~/Library/Logs/RubyMine2018.2/idea.log
