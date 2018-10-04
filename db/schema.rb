@@ -10,16 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_04_082432) do
+ActiveRecord::Schema.define(version: 2018_10_04_100548) do
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email"
-    t.password "password"
+    t.string "password"
     t.string "name"
     t.string "mobile"
     t.string "country"
     t.date "dob"
     t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "devices", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "category"
+    t.string "did"
+    t.string "os"
+    t.string "model"
+    t.string "build"
+    t.string "source"
+    t.string "user_agent"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sessions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "token"
+    t.integer "customer_id"
+    t.integer "device_id"
+    t.string "ip_address"
+    t.string "geo"
+    t.datetime "expire_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

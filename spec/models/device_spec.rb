@@ -1,21 +1,21 @@
 # == Schema Information
 #
-# Table name: customers
+# Table name: devices
 #
 #  id         :bigint(8)        not null, primary key
-#  email      :string(255)
-#  password   :string(255)
-#  name       :string(255)
-#  mobile     :string(255)
-#  country    :string(255)
-#  dob        :date
-#  address    :string(255)
+#  category   :string(255)
+#  did        :string(255)
+#  os         :string(255)
+#  model      :string(255)
+#  build      :string(255)
+#  source     :string(255)
+#  user_agent :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'rails_helper'
 
-RSpec.describe Customer, type: :model do
+RSpec.describe Device, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @session.token %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @session.customer_id %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @session.device_id %>
+</p>
+
+<p>
+  <strong>IP:</strong>
+  <%= @session.ip_address %>
+</p>
+
+<p>
+  <strong>Geo:</strong>
+  <%= @session.geo %>
+</p>
+
+<p>
+  <strong>Expire at:</strong>
+  <%= @session.expire_at %>
+</p>
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>
