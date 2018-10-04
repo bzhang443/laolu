@@ -1,50 +1,24 @@
 Laolu
 ================
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![MiTrade](public/mitrade.png)](https://www.mitrade.com)
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This application was designed to serve as BOSS and API portal of Mitrade.
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+BOSS is the operation backend which is used internally. 
 
-Problems? Issues?
------------
+API is the interface to customers coming from Web/Mobile/Desktop.
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
+Issues&Todos
 -------------
-
-This application requires:
-
-- Ruby 2.5.1
-- Rails 5.2.1
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
+  * customer/instrument/order model
+  * docker&compose support
+  * ~~vagrant support~~
 
 Credits
 -------
+Bison bisonzhang@gmail.com
 
 License
 -------
+private
