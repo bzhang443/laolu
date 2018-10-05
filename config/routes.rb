@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   resources :devices
   resources :sessions
   resources :customers
+
   root to: 'visitors#index'
   devise_for :users
+  devise_scope :user do
+    post "/sessions/user" => 'devise/sessions#create'
+  end
   resources :users
 end

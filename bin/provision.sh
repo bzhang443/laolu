@@ -32,3 +32,7 @@ rbenv global 2.5.1
 ruby -v
 
 echo "gem: --no-document" > ~/.gemrc
+
+wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
+tar xvfz geckodriver-v0.23.0-linux64.tar.gz
+sudo mv geckodriver /usr/local/bin
