@@ -15,6 +15,10 @@ module Api
       json_response({ message: e.message }, :not_found)
     end
 
+    def wild
+      json_response({message: 'hi there!'}, :not_found)
+    end
+
     def json_response(object, status = :ok)
       render json: object, status: status
     end

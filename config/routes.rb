@@ -19,4 +19,6 @@ Rails.application.routes.draw do
     post "/sessions/user" => 'devise/sessions#create'
   end
   resources :users
+
+  match '*path', via: :all, to: 'api/api#wild'
 end

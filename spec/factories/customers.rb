@@ -17,7 +17,7 @@
 FactoryBot.define do
   factory :customer do
     email { Faker::Internet.email }
-    password { Faker::Lorem.characters(16) }
+    password { Faker::Internet.password }
     name { Faker::Name.name }
     mobile { Faker::PhoneNumber.cell_phone }
     country { Faker::Address.country_code }
