@@ -16,4 +16,7 @@
 
 class Device < ApplicationRecord
   enum category: [:android, :ios, :web, :desktop]
+
+  has_many :sessions
+  validates_presence_of :category, :did
 end

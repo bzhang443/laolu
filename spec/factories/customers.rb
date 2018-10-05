@@ -16,12 +16,12 @@
 
 FactoryBot.define do
   factory :customer do
-    email { "MyString" }
-    password { "MyString" }
-    name { "MyString" }
-    mobile { "MyString" }
-    country { "MyString" }
-    dob { "2018-10-04" }
-    address { "MyString" }
+    email { Faker::Internet.email }
+    password { Faker::Lorem.characters(16) }
+    name { Faker::Name.name }
+    mobile { Faker::PhoneNumber.cell_phone }
+    country { Faker::Address.country_code }
+    dob {Faker::Date.birthday(18, 65) }
+    address { Faker::Address.full_address }
   end
 end

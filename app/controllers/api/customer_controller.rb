@@ -17,7 +17,7 @@ module Api
           birthday: he.dob,
           kick: CustomerService.kick
       }
-      json_response(obj, :created)
+      json_response(obj)
     end
 
     def reset_pass

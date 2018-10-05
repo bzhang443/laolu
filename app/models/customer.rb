@@ -15,4 +15,7 @@
 #
 
 class Customer < ApplicationRecord
+  has_many :sessions
+
+  validates_presence_of :email, :password
 end

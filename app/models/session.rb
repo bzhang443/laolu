@@ -16,4 +16,6 @@
 class Session < ApplicationRecord
   belongs_to :customer
   belongs_to :device
+
+  validates_presence_of :token
 end
